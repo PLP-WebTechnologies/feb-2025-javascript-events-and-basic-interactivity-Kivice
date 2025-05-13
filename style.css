@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.4s ease-in-out;
+}
+
+/* Three Different Colors */
+:root {
+    --primary-color: #0066cc; /* Blue */
+    --secondary-color: #ff6600; /* Orange */
+    --accent-color: #66cc66; /* Green */
+}
+
+/* Navigation Bar - Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Buttons with Animation */
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+}
+
+/* Hero Section with Animation */
+.hero {
+    padding: 40px;
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Form */
+.contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.contact:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
